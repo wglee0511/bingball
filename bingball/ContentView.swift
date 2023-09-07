@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     let environment = Environment()
+    
+    init() {
+        print(environment.PRODUCTION_TYPE ?? "")
+    }
 
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text(environment.PRODUCTION_TYPE ?? "")
+            Text("Hello World")
         }
         .padding()
     }
