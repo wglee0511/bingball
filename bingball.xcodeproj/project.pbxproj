@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		75117B7A86307B367F2B55FD /* Pods_bingball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7075DDC96A49B123372E75C0 /* Pods_bingball.framework */; };
 		C7D22E0AE4517DAD527E859C /* Pods_bingballTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBC66D9A60780044C1433EC /* Pods_bingballTests.framework */; };
+		E46064842AA800E1008F4BCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED734A2AA69E1E003E1B11 /* ContentView.swift */; };
+		E46064852AA800E1008F4BCE /* bingballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED73482AA69E1E003E1B11 /* bingballApp.swift */; };
+		E46064872AA800E1008F4BCE /* Pods_bingball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7075DDC96A49B123372E75C0 /* Pods_bingball.framework */; };
+		E46064892AA800E1008F4BCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4ED734F2AA69E1F003E1B11 /* Preview Assets.xcassets */; };
+		E460648A2AA800E1008F4BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4ED734C2AA69E1F003E1B11 /* Assets.xcassets */; };
+		E4D12CD82AA80B710046E790 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D12CD72AA80B710046E790 /* env.swift */; };
+		E4D12CD92AA80B710046E790 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D12CD72AA80B710046E790 /* env.swift */; };
 		E4ED73492AA69E1E003E1B11 /* bingballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED73482AA69E1E003E1B11 /* bingballApp.swift */; };
 		E4ED734B2AA69E1E003E1B11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED734A2AA69E1E003E1B11 /* ContentView.swift */; };
 		E4ED734D2AA69E1F003E1B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4ED734C2AA69E1F003E1B11 /* Assets.xcassets */; };
@@ -46,6 +53,10 @@
 		C202D65163A53B05F0DD4E9B /* Pods-bingballTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bingballTests.debug.xcconfig"; path = "Target Support Files/Pods-bingballTests/Pods-bingballTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0BEDEF8B712CEA5D2D13678 /* Pods-bingball-bingballUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bingball-bingballUITests.release.xcconfig"; path = "Target Support Files/Pods-bingball-bingballUITests/Pods-bingball-bingballUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D47A1D8FAE39B139F704A2CA /* Pods-bingball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bingball.debug.xcconfig"; path = "Target Support Files/Pods-bingball/Pods-bingball.debug.xcconfig"; sourceTree = "<group>"; };
+		E460648E2AA800E1008F4BCE /* bingball-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bingball-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E460648F2AA80455008F4BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E46064902AA8047E008F4BCE /* Info-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-dev.plist"; sourceTree = "<group>"; };
+		E4D12CD72AA80B710046E790 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		E4ED73452AA69E1E003E1B11 /* bingball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bingball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED73482AA69E1E003E1B11 /* bingballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bingballApp.swift; sourceTree = "<group>"; };
 		E4ED734A2AA69E1E003E1B11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +70,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E46064862AA800E1008F4BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46064872AA800E1008F4BCE /* Pods_bingball.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4ED73422AA69E1E003E1B11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,13 +125,28 @@
 				C202D65163A53B05F0DD4E9B /* Pods-bingballTests.debug.xcconfig */,
 				1154C1F5F51062867A2936D2 /* Pods-bingballTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E42967AE2AA94BA400495047 /* util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E4D12CD32AA80B1F0046E790 /* constant */ = {
+			isa = PBXGroup;
+			children = (
+				E4D12CD72AA80B710046E790 /* env.swift */,
+			);
+			path = constant;
 			sourceTree = "<group>";
 		};
 		E4ED733C2AA69E1E003E1B11 = {
 			isa = PBXGroup;
 			children = (
+				E46064902AA8047E008F4BCE /* Info-dev.plist */,
 				E4ED73472AA69E1E003E1B11 /* bingball */,
 				E4ED73582AA69E1F003E1B11 /* bingballTests */,
 				E4ED73622AA69E1F003E1B11 /* bingballUITests */,
@@ -128,6 +162,7 @@
 				E4ED73452AA69E1E003E1B11 /* bingball.app */,
 				E4ED73552AA69E1F003E1B11 /* bingballTests.xctest */,
 				E4ED735F2AA69E1F003E1B11 /* bingballUITests.xctest */,
+				E460648E2AA800E1008F4BCE /* bingball-dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +170,9 @@
 		E4ED73472AA69E1E003E1B11 /* bingball */ = {
 			isa = PBXGroup;
 			children = (
+				E42967AE2AA94BA400495047 /* util */,
+				E4D12CD32AA80B1F0046E790 /* constant */,
+				E460648F2AA80455008F4BCE /* Info.plist */,
 				E4ED73482AA69E1E003E1B11 /* bingballApp.swift */,
 				E4ED734A2AA69E1E003E1B11 /* ContentView.swift */,
 				E4ED734C2AA69E1F003E1B11 /* Assets.xcassets */,
@@ -171,6 +209,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E46064812AA800E1008F4BCE /* bingball-dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E460648B2AA800E1008F4BCE /* Build configuration list for PBXNativeTarget "bingball-dev" */;
+			buildPhases = (
+				E46064822AA800E1008F4BCE /* [CP] Check Pods Manifest.lock */,
+				E46064832AA800E1008F4BCE /* Sources */,
+				E46064862AA800E1008F4BCE /* Frameworks */,
+				E46064882AA800E1008F4BCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bingball-dev";
+			productName = bingball;
+			productReference = E460648E2AA800E1008F4BCE /* bingball-dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E4ED73442AA69E1E003E1B11 /* bingball */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4ED73692AA69E1F003E1B11 /* Build configuration list for PBXNativeTarget "bingball" */;
@@ -264,6 +320,7 @@
 			projectRoot = "";
 			targets = (
 				E4ED73442AA69E1E003E1B11 /* bingball */,
+				E46064812AA800E1008F4BCE /* bingball-dev */,
 				E4ED73542AA69E1F003E1B11 /* bingballTests */,
 				E4ED735E2AA69E1F003E1B11 /* bingballUITests */,
 			);
@@ -271,6 +328,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E46064882AA800E1008F4BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46064892AA800E1008F4BCE /* Preview Assets.xcassets in Resources */,
+				E460648A2AA800E1008F4BCE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4ED73432AA69E1E003E1B11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,15 +429,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E46064822AA800E1008F4BCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bingball-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E46064832AA800E1008F4BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46064842AA800E1008F4BCE /* ContentView.swift in Sources */,
+				E46064852AA800E1008F4BCE /* bingballApp.swift in Sources */,
+				E4D12CD92AA80B710046E790 /* env.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4ED73412AA69E1E003E1B11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E4ED734B2AA69E1E003E1B11 /* ContentView.swift in Sources */,
 				E4ED73492AA69E1E003E1B11 /* bingballApp.swift in Sources */,
+				E4D12CD82AA80B710046E790 /* env.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +507,66 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E460648C2AA800E1008F4BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47A1D8FAE39B139F704A2CA /* Pods-bingball.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bingball/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "info-dev.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranazang.bingball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E460648D2AA800E1008F4BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23296C8DA7F4126CBE9C3E58 /* Pods-bingball.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bingball/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "info-dev.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranazang.bingball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E4ED73672AA69E1F003E1B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,6 +692,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"bingball/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bingball/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -562,6 +722,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"bingball/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bingball/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -659,6 +820,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E460648B2AA800E1008F4BCE /* Build configuration list for PBXNativeTarget "bingball-dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E460648C2AA800E1008F4BCE /* Debug */,
+				E460648D2AA800E1008F4BCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E4ED73402AA69E1E003E1B11 /* Build configuration list for PBXProject "bingball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
