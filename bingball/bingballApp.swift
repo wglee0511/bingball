@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct bingballApp: App {
+    @AppStorage("appearance") var appearance: Appearance = .automatic
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationController()
         }
     }
 }
