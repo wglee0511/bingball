@@ -39,4 +39,14 @@ extension Color {
     static let GRAY_200  = Color(hex: "#b2bec3")
     static let GRAY_300  = Color(hex: "#636e72")
     static let GRAY_400  = Color(hex: "#2d3436")
+    
+    static let RED_100  = Color(hex: "#fab1a0")
+    static let RED_200  = Color(hex: "#ff7675")
+    static let RED_300  = Color(hex: "#fd79a8")
+    static let RED_400  = Color(hex: "#e17055")
+    static let RED_500  = Color(hex: "#d63031")
+    static let RED_600  = Color(hex: "#e84393")
+    
+    static let YELLOW_100  = Color(hex: "#ffeaa7")
+    static let YELLOW_200  = Color(hex: "#fdcb6e")
 }
